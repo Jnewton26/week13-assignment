@@ -1,15 +1,23 @@
+
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client'; // React 18 only for React 17 use 'react-dom'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './index.css';
-import App from './App';
+import MainContainer from './components/main-container';
+import Form from './components/form';
+import NavBar from './components/navbar';
+import Create from './components/create';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')); // React 18 
+// just change the code between <React.StrictMode>
 root.render(
   <React.StrictMode>
-    <App />
+    <MainContainer />
   </React.StrictMode>
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
